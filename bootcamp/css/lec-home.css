@@ -114,6 +114,29 @@ nav.open .sidebar {
 .lists .active-link .link {
     color: rgb(237, 238, 225);
 }
+.bottom-content{
+    visibility: hidden;
+  }
+  
+  .head-link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.929);
+  }
+  
+  
+  .head-links{
+    padding-left: 50px;
+    font-size: 18px;
+    padding-top: 4px;
+}
+  .head-links:hover{
+    font-size: 130%;
+    cursor: pointer;
+    color: #ffd166;
+  }
+  .head-link:hover{
+    color: #ffd166;
+  }
 
 .overlay {
     position: fixed;
@@ -267,7 +290,7 @@ nav.open~.overlay {
 
 .video-gallery-container h2.title {
     text-align: center;
-    font-weight: 300;
+    
     font-weight: 800;
     font-size: 34px;
     margin-top: 100px;
@@ -381,6 +404,14 @@ nav.open~.overlay {
 .thumbnail {
     width: 100%;
 }
+@media only screen and (max-width: 660px) {
+    .bottom-content{
+      visibility: visible;
+    }
+    .head-links{
+      visibility: hidden;
+    }
+  }
 
 @media (max-width:1200px) {
     .container {
@@ -399,5 +430,14 @@ nav.open~.overlay {
     .video-gallery .video {
         flex-flow: column;
         gap: 10px;
+    }
+    .header{
+        width: 100.5%;
+    }
+
+}
+@media (max-width: 400px) {
+    .header{
+        width: 100.7%;
     }
 }
