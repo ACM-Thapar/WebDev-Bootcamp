@@ -2,268 +2,228 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
 body {
+<<<<<<< HEAD
     min-height: 100%;
     background: #f0fcfc;
    
+=======
+  min-height: 100%;
+  background: #f0fcfc;
+>>>>>>> 33c9f0191c5b42ecf35904006fb0682b31b8ec5e
 }
-
 nav {
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
-
 nav .logo {
-    display: flex;
-    align-items: center;
-    margin: 0 24px;
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
 }
-
 .logo .menu-icon {
-    color: #333;
-    font-size: 24px;
-    margin-right: 14px;
-    cursor: pointer;
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
 }
-
 .logo .logo-name {
-    color: #333;
-    font-size: 22px;
-    font-weight: 500;
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
 }
-
 nav .sidebar {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100%;
-    width: 260px;
-    padding: 20px 0;
-    background-color: #fff;
-    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
 }
-
 nav.open .sidebar {
-    left: 0;
+  left: 0;
 }
-
 .sidebar .sidebar-content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 16px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
 }
-
 .sidebar-content .list {
-    list-style: none;
+  list-style: none;
 }
-
 .list .nav-link {
-    display: flex;
-    align-items: center;
-    margin: 8px 0;
-    padding: 14px 12px;
-    border-radius: 8px;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
 }
-
 .lists .nav-link:hover {
-    background-color: #fbdd74;
-    border: 3px solid #272343;
+  background-color: #fbdd74;
+  border: 3px solid #272343;
 }
 
-.active-link {
+.active-link{
     background-color: #272343;
     color: #fff;
 }
 
 .nav-link .icon {
-    margin-right: 14px;
-    font-size: 20px;
-    color: #707070;
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
 }
-
 .nav-link .link {
-    font-size: 16px;
-    color: #707070;
-    font-weight: 400;
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
 }
-
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
     color: #272343;
 }
-
 .lists .active-link .icon,
 .lists .active-link .link {
     color: rgb(237, 238, 225);
 }
-.bottom-content{
-    visibility: hidden;
-  }
-  
-  .head-link{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.929);
-  }
-  
-  
-  .head-links{
-    padding-left: 50px;
-    font-size: 18px;
-    padding-top: 4px;
-}
-  .head-links:hover{
-    font-size: 130%;
-    cursor: pointer;
-    color: #ffd166;
-  }
-  .head-link:hover{
-    color: #ffd166;
-  }
-
 .overlay {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 1000vh;
-    width: 200%;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-    background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
 }
 
-nav.open~.overlay {
-    opacity: 1;
-    left: 260px;
-    pointer-events: auto;
-}
-
-.head {
+.head{
     display: flex;
     position: fixed;
     right: 50px;
     flex-direction: row;
 }
-
-.head-links {
+.head-links{
     padding-left: 50px;
     font-size: 18px;
     padding-top: 4px;
 }
-
-.accordion-button:focus {
+.accordion-button:focus
+{
     outline: none;
     box-shadow: none;
 }
-
-.accordion-button {
+.accordion-button
+{
     box-shadow: none;
     color: #bae8e8;
-
+    
 }
 
-.main {
+.main{
     margin-top: 60px;
     z-index: -1;
 }
-
-.accordionWrapper {
-    margin: 30px;
+.accordionWrapper{
+   margin: 30px;
     margin-top: 100px;
+    
 
-
-}
-
-.accordionItem {
-    float: left;
-    display: block;
-    width: 100%;
+    }
+.accordionItem{
+    float:left;
+    display:block;
+    width:100%;
     box-sizing: border-box;
-    font-family: 'poppins', Arial, sans-serif;
+    font-family:'poppins',Arial,sans-serif;
     font-size: 20px;
-
+   
 }
-
-.accordionItemHeading {
-    font-family: 'poppins', Arial, sans-serif;
+.accordionItemHeading{
+    font-family:'poppins',Arial,sans-serif;
     font-size: 22px;
-    cursor: pointer;
-    margin: 0px 0px 10px 0px;
-    padding: 10px;
-    background: #fbdd74;
-    color: #272343;
+    cursor:pointer;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    background:#fbdd74;
+    color:#272343;
     border: 3px solid #272343;
-    width: 100%;
+    width:100%;
     -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-sizing: border-box;
+-moz-border-radius: 3px;
+border-radius: 3px;
+        box-sizing: border-box;
 }
-
-.close .accordionItemContent {
+.close .accordionItemContent{
     visibility: hidden;
-    height: 0px;
-    transition: height 1s ease-out;
+    height:0px;
+    transition:height 1s ease-out;
     -webkit-transform: scaleY(0);
-    -o-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    float: left;
-    display: block;
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+    float:left;
+    display:block;
     border: 3px solid #272343;
-
-
+    
+    
 }
-
-.open .accordionItemContent {
-    padding: 20px;
-    border: 2px solid #272343;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+.open .accordionItemContent{
+        padding: 20px;
+        border: 2px solid #272343;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
 
     background-color: #fff;
-
+  
     width: 100%;
     margin: 0px 0px 10px 0px;
-    display: block;
+    display:block;
     -webkit-transform: scaleY(1);
-    -o-transform: scaleY(1);
-    -ms-transform: scaleY(1);
-    transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
     -webkit-transform-origin: top;
-    -o-transform-origin: top;
-    -ms-transform-origin: top;
-    transform-origin: top;
+	-o-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
 
-    -webkit-transition: -webkit-transform 0.4s ease-out;
-    -o-transition: -o-transform 0.4s ease;
-    -ms-transition: -ms-transform 0.4s ease;
-    transition: transform 0.4s ease;
-    box-sizing: border-box;
+	-webkit-transition: -webkit-transform 0.4s ease-out;
+	-o-transition: -o-transform 0.4s ease;
+	-ms-transition: -ms-transform 0.4s ease;
+	transition: transform 0.4s ease;
+        box-sizing: border-box;
 }
 
-.open .accordionItemHeading {
-    margin: 0px;
-    -webkit-border-top-left-radius: 3px;
+.open .accordionItemHeading{
+    margin:0px;
+        -webkit-border-top-left-radius: 3px;
     -webkit-border-top-right-radius: 3px;
     -moz-border-radius-topleft: 3px;
     -moz-border-radius-topright: 3px;
@@ -277,20 +237,6 @@ nav.open~.overlay {
     border-bottom-left-radius: 0px;
     background-color: #272343;
     color: white;
-
-}
-
-.video-gallery-container {
-    font-family: "Poppins", sans-serif;
-}
-
-.video-gallery-container,
-.video-gallery-container * {
-    box-sizing: border-box;
-}
-
-.video-gallery-container h2.title {
-    text-align: center;
     
     font-weight: 800;
     font-size: 34px;
@@ -452,3 +398,4 @@ nav.open~.overlay {
         width: 100.7%;
     }
 }
+
