@@ -11,6 +11,7 @@
 body {
     min-height: 100%;
     background: #f0fcfc;
+   
 }
 
 nav {
@@ -304,7 +305,7 @@ nav.open~.overlay {
     flex-wrap: wrap;
 
     align-items: center;
-    padding: 16px;
+    /* padding: 16px; */
 
     gap: 20px;
     color: #fff;
@@ -316,6 +317,8 @@ nav.open~.overlay {
     /* padding:15px; */
     border: 3px solid #272343;
     border-radius: 10px;
+    box-shadow: rgba(39, 35, 67, 0.4) 5px 5px, rgba(39, 35, 67, 0.3) 10px 10px, rgba(39, 35, 67, 0.2) 15px 15px, rgba(39, 35, 67, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
     display: flex;
     flex-direction: column;
 
@@ -352,6 +355,9 @@ nav.open~.overlay {
     flex: 1 1 250px;
     border: 3px solid #272343;
     border-radius: 10px;
+    box-shadow: rgba(39, 35, 67, 0.4) 5px 5px, rgba(39, 35, 67, 0.3) 10px 10px, rgba(39, 35, 67, 0.2) 15px 15px, rgba(39, 35, 67, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+
 
     background-color: white;
 }
@@ -404,6 +410,11 @@ nav.open~.overlay {
 .thumbnail {
     width: 100%;
 }
+.video-gallery-container{
+    padding-left: 3%;
+    padding-right:3%;
+}
+
 @media only screen and (max-width: 660px) {
     .bottom-content{
       visibility: visible;
