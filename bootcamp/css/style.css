@@ -77,7 +77,16 @@
 
 .main-btn
 {
-    width: 50%;
+    
+    margin: 20px;
+    padding:5px 5% ;
+    background-color: #ffd166;
+    border:  5px 5px solid #272343;
+    border-radius: 5px;
+    font-family: 'poppins';
+    font-weight: 400;
+    margin-top: 6%;
+
     
 }
 .scn-hr
@@ -151,13 +160,20 @@ flex-direction: row-reverse;
 .secondary-btn
 {
     margin: 20px;
-    padding:0 5%;
+    padding:5px 5%;
     background-color: #ffd166;
     border:  5px 5px solid #272343;
     border-radius: 5px;
     font-family: 'poppins';
     font-weight: 400;
     margin-top: 6%;
+    font-size: medium;
+}
+
+.secondary-btn:hover ,.main-btn:hover
+{
+    background-color: #272343;
+    color: #fbfefe;
 }
 
 
@@ -252,9 +268,9 @@ a:active
   }
   .logo-pic{
     width: 145%;
-    /* height: 14.5vh; */
     padding: 0;
     margin: 0;
+    margin-left: -20%;
   }
  
   h1
@@ -267,7 +283,7 @@ a:active
   
   .hr-length{
     visibility: visible;
-    /* width: 170%; */
+ 
   }
   }
 @media only screen and (max-width: 700px) {
